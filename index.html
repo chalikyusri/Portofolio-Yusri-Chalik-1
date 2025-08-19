@@ -70,6 +70,26 @@
             border-left-color: #4f46e5;
             animation: spin 1s ease-in-out infinite;
         }
+        #beranda {
+            position: relative;
+            background-image: url('https://png.pngtree.com/background/20230518/original/pngtree-factory-with-lit-up-pipes-against-the-background-picture-image_2647342.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        #beranda::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(248, 249, 250, 0.85); /* Overlay warna terang */
+            z-index: 1;
+        }
+        #beranda > div {9192939495969798991001011021031041051061071081091101111121131141151169089$0
+            position: relative;
+            z-index: 2;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -99,10 +119,10 @@
         </div>
     </header>
 
-    <main class="container mx-auto px-6 pt-24">
+    <main>
 
         <!-- Bagian Beranda (Hero) -->
-        <section id="beranda" class="min-h-[90vh] flex flex-col-reverse md:flex-row items-center justify-center">
+        <section id="beranda" class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center container mx-auto px-6">
             <div class="md:w-1/2 text-center md:text-left">
                 <span class="text-indigo-600 font-semibold">Product Management Enthusiast</span>
                 <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight my-4">
@@ -113,268 +133,269 @@
                 </p>
                 <div class="flex justify-center md:justify-start space-x-4">
                     <a href="#kontak" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Hubungi Saya</a>
-                    <a href="#proyek" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg transition duration-300">Lihat Proyek</a>
+                    <a href="#proyek" class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Lihat Proyek</a>
                 </div>
                 <div class="mt-12 flex justify-center md:justify-start space-x-6">
-                    <a href="#" class="text-gray-500 hover:text-indigo-600"><i data-feather="github"></i></a>
-                    <a href="#" class="text-gray-500 hover:text-indigo-600"><i data-feather="linkedin"></i></a>
-                    <a href="#" class="text-gray-500 hover:text-indigo-600"><i data-feather="twitter"></i></a>
+                    <a href="#" class="text-gray-700 hover:text-indigo-600"><i data-feather="github"></i></a>
+                    <a href="#" class="text-gray-700 hover:text-indigo-600"><i data-feather="linkedin"></i></a>
+                    <a href="#" class="text-gray-700 hover:text-indigo-600"><i data-feather="twitter"></i></a>
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-center mb-10 md:mb-0">
-                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-gray-200 border-4 border-indigo-200 shadow-lg">
-                    <img src="https://placehold.co/400x400/e0e7ff/4338ca?text=Foto+Anda" alt="Foto Profil Yusri Chalik" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e7ff/4338ca?text=Foto+Anda';">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-white/50 backdrop-blur-sm border-4 border-white shadow-lg">
+                    <img src="https://i.ibb.co/yB40s69/poto-yusri-edit-Photoroom.jpg" alt="Foto Profil Yusri Chalik" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e7ff/4338ca?text=Foto+Anda';">
                 </div>
             </div>
         </section>
 
-        <!-- Bagian Tentang Saya -->
-        <section id="tentang" class="py-20">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Tentang Saya</h2>
-                <p class="text-lg text-gray-600 leading-relaxed">
-                    Saya adalah seorang fresh graduate Sarjana Teknik Kimia dari Universitas Sumatera Utara (USU) yang menemukan passion dalam dunia manajemen produk. Latar belakang saya di bidang teknik telah membekali saya dengan kemampuan berpikir analitis, pemecahan masalah yang terstruktur, dan pendekatan berbasis data. Saya antusias dalam menerjemahkan kebutuhan pengguna yang kompleks menjadi solusi produk yang sederhana dan efektif.
-                </p>
-            </div>
-        </section>
+        <div class="container mx-auto px-6">
+            <!-- Bagian Tentang Saya -->
+            <section id="tentang" class="py-20">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Tentang Saya</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Saya adalah seorang fresh graduate Sarjana Teknik Kimia dari Universitas Sumatera Utara (USU) yang menemukan passion dalam dunia manajemen produk. Latar belakang saya di bidang teknik telah membekali saya dengan kemampuan berpikir analitis, pemecahan masalah yang terstruktur, dan pendekatan berbasis data. Saya antusias dalam menerjemahkan kebutuhan pengguna yang kompleks menjadi solusi produk yang sederhana dan efektif.
+                    </p>
+                </div>
+            </section>
 
-        <!-- Bagian Proyek -->
-        <section id="proyek" class="py-20 bg-gray-50 rounded-xl">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900">Proyek & Studi Kasus</h2>
-                <p class="text-lg text-gray-600 mt-2">Berikut adalah 8 studi kasus yang telah saya kerjakan selama studi.</p>
-            </div>
-            
-            <!-- Proyek Unggulan -->
-            <div class="mb-16">
-                <h3 class="text-2xl font-bold text-gray-800 text-center mb-8">Proyek Unggulan</h3>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
-                    <div class="md:w-1/3">
-                        <img src="https://i.ibb.co/6yYvjM5/gambar-krita-ekspor.jpg" class="h-full w-full object-cover" alt="Proyek Krita" onerror="this.onerror=null;this.src='https://placehold.co/800x600/c7d2fe/3730a3?text=Krita+App';">
-                    </div>
-                    <div class="p-8 md:w-2/3">
-                        <h4 class="text-2xl font-bold text-gray-900 mb-2">Aplikasi Ekspor Pertanian 'Krita'</h4>
-                        <span class="text-sm text-gray-500">Peran: Product Owner</span>
-                        <p class="text-gray-600 mt-4 mb-6">
-                            Sebuah studi kasus mendalam untuk merancang platform yang memberdayakan petani Indonesia dengan menyediakan edukasi, pengolahan, dan akses ke pasar ekspor untuk produk limbah pertanian.
-                        </p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <div>
-                                <h5 class="font-semibold text-gray-800 mb-2">Masalah Pengguna</h5>
-                                <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                    <li>Petani tidak tahu cara mengolah limbah pertanian.</li>
-                                    <li>Kesulitan memasarkan produk ke luar negeri.</li>
-                                    <li>Keterbatasan pengetahuan tentang regulasi ekspor.</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h5 class="font-semibold text-gray-800 mb-2">Solusi & Fitur Utama</h5>
-                                <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                    <li>Platform Edukasi & Workshop.</li>
-                                    <li>Layanan Jasa Undername Ekspor.</li>
-                                    <li>Mentoring dengan ahli.</li>
-                                    <li>Analisis tren pasar.</li>
-                                </ul>
-                            </div>
+            <!-- Bagian Proyek -->
+            <section id="proyek" class="py-20 bg-gray-50 rounded-xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900">Proyek & Studi Kasus</h2>
+                    <p class="text-lg text-gray-600 mt-2">Berikut adalah 8 studi kasus yang telah saya kerjakan selama studi.</p>
+                </div>
+                
+                <!-- Proyek Unggulan -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold text-gray-800 text-center mb-8">Proyek Unggulan</h3>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
+                        <div class="md:w-1/3">
+                            <img src="https://i.ibb.co/6yYvjM5/gambar-krita-ekspor.jpg" class="h-full w-full object-cover" alt="Proyek Krita" onerror="this.onerror=null;this.src='https://placehold.co/800x600/c7d2fe/3730a3?text=Krita+App';">
                         </div>
-                         <div class="mt-6 flex flex-wrap gap-4 items-center">
-                           <a href="https://docs.google.com/presentation/d/1-gY_p_z_Y-g_X_Z_Y-g_X_Z_Y-g_X_Z_Y-g_X_Z_Y/edit?usp=sharing" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800">Lihat Detail Studi Kasus &rarr;</a>
-                           <button class="ai-summarize-btn w-full sm:w-auto text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas Proyek dengan AI</button>
+                        <div class="p-8 md:w-2/3">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-2">Aplikasi Ekspor Pertanian 'Krita'</h4>
+                            <span class="text-sm text-gray-500">Peran: Product Owner</span>
+                            <p class="text-gray-600 mt-4 mb-6">
+                                Sebuah studi kasus mendalam untuk merancang platform yang memberdayakan petani Indonesia dengan menyediakan edukasi, pengolahan, dan akses ke pasar ekspor untuk produk limbah pertanian.
+                            </p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <h5 class="font-semibold text-gray-800 mb-2">Masalah Pengguna</h5>
+                                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                        <li>Petani tidak tahu cara mengolah limbah pertanian.</li>
+                                        <li>Kesulitan memasarkan produk ke luar negeri.</li>
+                                        <li>Keterbatasan pengetahuan tentang regulasi ekspor.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-gray-800 mb-2">Solusi & Fitur Utama</h5>
+                                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                        <li>Platform Edukasi & Workshop.</li>
+                                        <li>Layanan Jasa Undername Ekspor.</li>
+                                        <li>Mentoring dengan ahli.</li>
+                                        <li>Analisis tren pasar.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="mt-6 flex flex-wrap gap-4 items-center">
+                               <a href="https://docs.google.com/presentation/d/1_H-L-Y_Z_Y-g_X_Z_Y-g_X_Z_Y-g_X_Z_Y-g_X_Z_Y/edit?usp=sharing" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800">Lihat Detail Studi Kasus &rarr;</a>
+                               <button class="ai-summarize-btn w-full sm:w-auto text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas Proyek dengan AI</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Proyek Lainnya -->
-            <div>
-                 <h3 class="text-2xl font-bold text-gray-800 text-center mb-8">Proyek Lainnya</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    
-                    <!-- Proyek: LinkAja UX Research -->
-                    <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Riset UX Aplikasi LinkAja</h3>
-                            <p class="text-gray-600 mb-4 flex-grow">Melakukan riset pengguna (kualitatif & kuantitatif) untuk mengidentifikasi pain points utama, serta membuat empathy map dan user persona.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">UX Research</span>
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">User Persona</span>
-                            </div>
-                            <div class="mt-auto flex flex-wrap gap-4 items-center">
-                               <a href="#" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800 text-sm">Lihat Detail &rarr;</a>
-                               <button class="ai-summarize-btn flex-grow text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas</button>
+                <!-- Proyek Lainnya -->
+                <div>
+                     <h3 class="text-2xl font-bold text-gray-800 text-center mb-8">Proyek Lainnya</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+                        <!-- Proyek: LinkAja UX Research -->
+                        <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Riset UX Aplikasi LinkAja</h3>
+                                <p class="text-gray-600 mb-4 flex-grow">Melakukan riset pengguna (kualitatif & kuantitatif) untuk mengidentifikasi pain points utama, serta membuat empathy map dan user persona.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">UX Research</span>
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">User Persona</span>
+                                </div>
+                                <div class="mt-auto flex flex-wrap gap-4 items-center">
+                                   <a href="#" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800 text-sm">Lihat Detail &rarr;</a>
+                                   <button class="ai-summarize-btn flex-grow text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Proyek: LinkAja PRD & Roadmap -->
-                     <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">PRD & Roadmap: LinkAja</h3>
-                            <p class="text-gray-600 mb-4 flex-grow">Menyusun Product Requirements Document (PRD) dan Product Roadmap berdasarkan hasil riset untuk pengembangan fitur baru di LinkAja.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">PRD</span>
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Product Roadmap</span>
-                            </div>
-                            <div class="mt-auto flex flex-wrap gap-4 items-center">
-                               <a href="#" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800 text-sm">Lihat Detail &rarr;</a>
-                               <button class="ai-summarize-btn flex-grow text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas</button>
+                        <!-- Proyek: LinkAja PRD & Roadmap -->
+                         <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">PRD & Roadmap: LinkAja</h3>
+                                <p class="text-gray-600 mb-4 flex-grow">Menyusun Product Requirements Document (PRD) dan Product Roadmap berdasarkan hasil riset untuk pengembangan fitur baru di LinkAja.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">PRD</span>
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Product Roadmap</span>
+                                </div>
+                                <div class="mt-auto flex flex-wrap gap-4 items-center">
+                                   <a href="#" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800 text-sm">Lihat Detail &rarr;</a>
+                                   <button class="ai-summarize-btn flex-grow text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Proyek: Pigikuy -->
-                    <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Konsep Aplikasi Travel 'Pigikuy'</h3>
-                            <p class="text-gray-600 mb-4 flex-grow">Melakukan analisis kompetitor (Traveloka & Tiket.com) untuk menemukan celah pasar dan merancang konsep aplikasi travel baru dengan Unique Value Proposition.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Analisis Kompetitor</span>
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Product Strategy</span>
-                            </div>
-                             <div class="mt-auto flex flex-wrap gap-4 items-center">
-                               <a href="#" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800 text-sm">Lihat Detail &rarr;</a>
-                               <button class="ai-summarize-btn flex-grow text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Proyek: SatSet.id -->
-                    <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Go-To-Market Strategy: 'SatSet.id'</h3>
-                            <p class="text-gray-600 mb-4 flex-grow">Merancang strategi peluncuran produk untuk aplikasi pembayaran digital, mencakup analisis pasar (TAM, SAM, SOM), model bisnis, dan rencana pemasaran.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Go-To-Market</span>
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Market Sizing</span>
-                            </div>
-                             <div class="mt-auto flex flex-wrap gap-4 items-center">
-                               <a href="#" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800 text-sm">Lihat Detail &rarr;</a>
-                               <button class="ai-summarize-btn flex-grow text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas</button>
+                        <!-- Proyek: Pigikuy -->
+                        <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Konsep Aplikasi Travel 'Pigikuy'</h3>
+                                <p class="text-gray-600 mb-4 flex-grow">Melakukan analisis kompetitor (Traveloka & Tiket.com) untuk menemukan celah pasar dan merancang konsep aplikasi travel baru dengan Unique Value Proposition.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Analisis Kompetitor</span>
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Product Strategy</span>
+                                </div>
+                                 <div class="mt-auto flex flex-wrap gap-4 items-center">
+                                   <a href="#" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800 text-sm">Lihat Detail &rarr;</a>
+                                   <button class="ai-summarize-btn flex-grow text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        
+                        <!-- Proyek: SatSet.id -->
+                        <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Go-To-Market Strategy: 'SatSet.id'</h3>
+                                <p class="text-gray-600 mb-4 flex-grow">Merancang strategi peluncuran produk untuk aplikasi pembayaran digital, mencakup analisis pasar (TAM, SAM, SOM), model bisnis, dan rencana pemasaran.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Go-To-Market</span>
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Market Sizing</span>
+                                </div>
+                                 <div class="mt-auto flex flex-wrap gap-4 items-center">
+                                   <a href="#" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800 text-sm">Lihat Detail &rarr;</a>
+                                   <button class="ai-summarize-btn flex-grow text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas</button>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- Proyek: Chingari QA -->
-                    <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Quality Assurance: Aplikasi 'Chingari'</h3>
-                            <p class="text-gray-600 mb-4 flex-grow">Melakukan pengujian Quality Assurance pada aplikasi video pendek Chingari. Membuat 53 test case dan berhasil mengidentifikasi 18 bug kritis.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Quality Assurance</span>
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Bug Reporting</span>
-                            </div>
-                             <div class="mt-auto flex flex-wrap gap-4 items-center">
-                               <a href="#" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800 text-sm">Lihat Detail &rarr;</a>
-                               <button class="ai-summarize-btn flex-grow text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Proyek: Sprint Plan Chingari -->
-                    <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Roadmap & Sprint Plan: Chingari</h3>
-                            <p class="text-gray-600 mb-4 flex-grow">Menyusun Now-Next-Later Roadmap dan Eisenhower Matrix berdasarkan temuan bug untuk memprioritaskan perbaikan pada aplikasi Chingari.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Sprint Planning</span>
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Prioritization</span>
-                            </div>
-                             <div class="mt-auto flex flex-wrap gap-4 items-center">
-                               <a href="#" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800 text-sm">Lihat Detail &rarr;</a>
-                               <button class="ai-summarize-btn flex-grow text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas</button>
+                        <!-- Proyek: Chingari QA -->
+                        <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Quality Assurance: Aplikasi 'Chingari'</h3>
+                                <p class="text-gray-600 mb-4 flex-grow">Melakukan pengujian Quality Assurance pada aplikasi video pendek Chingari. Membuat 53 test case dan berhasil mengidentifikasi 18 bug kritis.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Quality Assurance</span>
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Bug Reporting</span>
+                                </div>
+                                 <div class="mt-auto flex flex-wrap gap-4 items-center">
+                                   <a href="#" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800 text-sm">Lihat Detail &rarr;</a>
+                                   <button class="ai-summarize-btn flex-grow text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- Proyek: GoTagihan -->
-                    <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Business Model: Aplikasi 'GoTagihan'</h3>
-                            <p class="text-gray-600 mb-4 flex-grow">Merancang Business Model Canvas (BMC) dan Lean Canvas untuk aplikasi pembayaran tagihan, mengidentifikasi problem, solution, dan revenue streams.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Business Model Canvas</span>
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Lean Canvas</span>
-                            </div>
-                             <div class="mt-auto flex flex-wrap gap-4 items-center">
-                               <a href="#" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800 text-sm">Lihat Detail &rarr;</a>
-                               <button class="ai-summarize-btn flex-grow text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas</button>
+                        
+                        <!-- Proyek: Sprint Plan Chingari -->
+                        <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Roadmap & Sprint Plan: Chingari</h3>
+                                <p class="text-gray-600 mb-4 flex-grow">Menyusun Now-Next-Later Roadmap dan Eisenhower Matrix berdasarkan temuan bug untuk memprioritaskan perbaikan pada aplikasi Chingari.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Sprint Planning</span>
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Prioritization</span>
+                                </div>
+                                 <div class="mt-auto flex flex-wrap gap-4 items-center">
+                                   <a href="#" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800 text-sm">Lihat Detail &rarr;</a>
+                                   <button class="ai-summarize-btn flex-grow text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                     <!-- Proyek Kosong untuk alignment -->
-                    <div class="project-card bg-transparent flex flex-col">
-                    </div>
+                        
+                        <!-- Proyek: GoTagihan -->
+                        <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 flex flex-col">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Business Model: Aplikasi 'GoTagihan'</h3>
+                                <p class="text-gray-600 mb-4 flex-grow">Merancang Business Model Canvas (BMC) dan Lean Canvas untuk aplikasi pembayaran tagihan, mengidentifikasi problem, solution, dan revenue streams.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Business Model Canvas</span>
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Lean Canvas</span>
+                                </div>
+                                 <div class="mt-auto flex flex-wrap gap-4 items-center">
+                                   <a href="#" target="_blank" class="font-semibold text-indigo-600 hover:text-indigo-800 text-sm">Lihat Detail &rarr;</a>
+                                   <button class="ai-summarize-btn flex-grow text-sm bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-4 rounded-lg transition duration-300">✨ Ringkas</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                         <!-- Proyek Kosong untuk alignment -->
+                        <div class="project-card bg-transparent flex flex-col">
+                        </div>
 
-                </div>
-            </div>
-        </section>
-
-        <!-- Bagian Keahlian -->
-        <section id="keahlian" class="py-20">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900">Keahlian</h2>
-                <p class="text-lg text-gray-600 mt-2">Beberapa keahlian dan tools yang saya kuasai.</p>
-            </div>
-            <div class="max-w-5xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Manajemen Produk</h3>
-                        <div class="flex flex-wrap justify-center gap-3">
-                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Riset Pengguna</span>
-                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Analisis Kompetitor</span>
-                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Product Requirements Document (PRD)</span>
-                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Product Roadmap</span>
-                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Go-To-Market Strategy</span>
-                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Quality Assurance (QA)</span>
-                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Wireframing & Prototyping</span>
-                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">AARRR Metrics</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Teknis & Lainnya</h3>
-                        <div class="flex flex-wrap justify-center gap-3">
-                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Software Ansys</span>
-                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Business Model Canvas</span>
-                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Pemecahan Masalah</span>
-                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Berpikir Analitis</span>
-                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Manajemen Proyek</span>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Bagian Kontak -->
-        <section id="kontak" class="py-20 bg-gray-50 rounded-xl">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900">Mari Terhubung</h2>
-                <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">
-                    Saya tertarik untuk berdiskusi mengenai peluang di bidang manajemen produk atau proyek kolaborasi lainnya.
-                </p>
-            </div>
-            <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md border border-gray-200">
-                <form action="#" method="POST" id="contact-form">
-                    <div class="mb-4">
-                        <label for="name" class="block text-gray-700 mb-2">Nama</label>
-                        <input type="text" id="name" name="name" class="w-full bg-gray-50 border border-gray-300 rounded-lg py-2 px-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <!-- Bagian Keahlian -->
+            <section id="keahlian" class="py-20">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Keahlian</h2>
+                    <p class="text-lg text-gray-600 mt-2">Beberapa keahlian dan tools yang saya kuasai.</p>
+                </div>
+                <div class="max-w-5xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Manajemen Produk</h3>
+                            <div class="flex flex-wrap justify-center gap-3">
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Riset Pengguna</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Analisis Kompetitor</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Product Requirements Document (PRD)</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Product Roadmap</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Go-To-Market Strategy</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Quality Assurance (QA)</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Wireframing & Prototyping</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">AARRR Metrics</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Teknis & Lainnya</h3>
+                            <div class="flex flex-wrap justify-center gap-3">
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Software Ansys</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Business Model Canvas</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Pemecahan Masalah</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Berpikir Analitis</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">Manajemen Proyek</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-gray-700 mb-2">Email</label>
-                        <input type="email" id="email" name="email" class="w-full bg-gray-50 border border-gray-300 rounded-lg py-2 px-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                    </div>
-                    <div class="mb-6">
-                        <label for="message" class="block text-gray-700 mb-2">Pesan</label>
-                        <textarea id="message" name="message" rows="4" class="w-full bg-gray-50 border border-gray-300 rounded-lg py-2 px-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <button type="button" id="ai-draft-btn" class="bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-3 px-8 rounded-lg transition duration-300 w-full">✨ Bantu Tulis Pesan</button>
-                        <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 w-full">Kirim Pesan</button>
-                    </div>
-                </form>
-            </div>
-        </section>
+                </div>
+            </section>
 
+            <!-- Bagian Kontak -->
+            <section id="kontak" class="py-20 bg-gray-50 rounded-xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Mari Terhubung</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">
+                        Saya tertarik untuk berdiskusi mengenai peluang di bidang manajemen produk atau proyek kolaborasi lainnya.
+                    </p>
+                </div>
+                <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md border border-gray-200">
+                    <form action="#" method="POST" id="contact-form">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 mb-2">Nama</label>
+                            <input type="text" id="name" name="name" class="w-full bg-gray-50 border border-gray-300 rounded-lg py-2 px-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full bg-gray-50 border border-gray-300 rounded-lg py-2 px-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 mb-2">Pesan</label>
+                            <textarea id="message" name="message" rows="4" class="w-full bg-gray-50 border border-gray-300 rounded-lg py-2 px-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <button type="button" id="ai-draft-btn" class="bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-semibold py-3 px-8 rounded-lg transition duration-300 w-full">✨ Bantu Tulis Pesan</button>
+                            <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 w-full">Kirim Pesan</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -553,3 +574,4 @@
     </script>
 </body>
 </html>
+
